@@ -36,7 +36,7 @@ sol! {
 pub struct CommonConfig {
     #[arg(long)]
     private_key: String,
-    #[arg(long)]
+    #[arg(long, default_value = "https://sepolia-rollup.arbitrum.io/rpc")]
     endpoint: String,
     #[arg(long)]
     address: H160,
